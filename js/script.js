@@ -22,6 +22,10 @@
  */
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
+    // pause the audio after 30sec
+    setTimeout(() => {
+        document.getElementById("my_audio").pause();
+    }, 30000);
     console.log('Shaadi me zaroor aana');
 });
 
